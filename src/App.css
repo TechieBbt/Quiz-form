@@ -92,6 +92,9 @@ button:hover {
 .EndScreen h1, h2 {
   color: black;
 }
+.EndScreen h2{
+  margin-top: -0.5rem;
+}
 #nextQuestion {
   width: 200px;
 }
@@ -113,11 +116,11 @@ h3 {
 }
 .form-container input, button {
   width: 350px;
-  height: 50px;
+  height: 40px;
   margin: 5px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 1rem;
 }
 .form-container input{
@@ -145,11 +148,15 @@ h3 {
   font-weight: 500;
   margin-top: 20px;
 }
+.row{
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .Menu {
     max-width: 300px;
     max-height: 300px;
+    margin-top: -2rem;
   }
   .Menu button {
     width: 150px;
@@ -170,17 +177,23 @@ h3 {
   }
   .EndScreen h1 {
     font-size: 1.3rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0.5rem;
     margin-top: 1rem;
   }
   .EndScreen h2 {
     font-size: 1rem;
+    .EndScreen h2{
+      margin-top: 1.5rem;
+    }
   }
   .form-container input, button {
     width: 250px;
-    height: 45px;
-    font-size: 16px;
+    height: 35px;
+    font-size: 12px;
   }
+  /* .form-container input::placeholder{
+    font-size: 12px;
+  } */
   .feedback-message p {
     font-size: 18px;}
 }
